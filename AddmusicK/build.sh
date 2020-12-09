@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-clang++ --std=c++17 ../AM405Remover/*.cpp   *.cpp asardll.c   -o AddmusicK
+g++ \
+  --std=c++17 \
+  -ldl \
+  ../AM405Remover/*.cpp *.cpp asardll.c \
+  -o addmusick
+
